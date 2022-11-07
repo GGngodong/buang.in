@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Buang.in</string>
+
+    <!-- Image Content Description -->
+    <string name="bg_home">Background Home</string>
+    <string name="img_profile">Image Profile</string>
+    <string name="img_logo_home">Image Logo Home</string>
+    <string name="img_truk">Image Truck</string>
+    <string name="img_tmpt_sampah">Image Tempat Sampah</string>
+    <string name="img_recycle">Image Recycle</string>
+    <string name="ic_location">Icon Location</string>
+
+    <!-- Home -->
+    <string name="welcome">Selamat Datang</string>
+    <string name="title_home">Tukarkan sampahmu sekarang!</string>
+    <string name="sub_title_home">Aplikasi Buang.in adalah solusi untuk menyelesaikan masalah sosial tentang kebersihan lingkungan</string>
+    <string name="menu_categori">Menu Kategori</string>
+    <string name="jmpt_sampah">Jemput Sampah</string>
+    <string name="jns_sampah">Jenis - Jenis Sampah</string>
+    <string name="saldo_riwayat">Saldo &amp; Riwayat </string>
+    <string name="location_user">Lokasi Anda</string>
+    <string name="name_user">Gede Dito</string>
+
 </resources>
