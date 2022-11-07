@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/indicator_active_background.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/spinner_background.xml" value="0.114" />
         <entry key="..\:/Users/zidan/StudioProjects/Buangin/app/src/main/res/layout/activity_main.xml" value="0.2" />
       </map>
     </option>
