@@ -3,6 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/bg_button.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/bg_rounded_bottom.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/bg_rounded_trans.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/bg_text_field.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_account.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_back.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_delete.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_email.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_info.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_location.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_lock.xml" value="0.114" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_spinner.xml" value="0.114" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/indicator_active_background.xml" value="0.114" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/indicator_inactive_background.xml" value="0.114" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/spinner_background.xml" value="0.114" />
