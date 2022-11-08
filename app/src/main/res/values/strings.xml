@@ -9,6 +9,13 @@
     <string name="img_tmpt_sampah">Image Tempat Sampah</string>
     <string name="img_recycle">Image Recycle</string>
     <string name="ic_location">Icon Location</string>
+    <string name="ic_back">Back</string>
+    <string name="ic_line">Line</string>
+    <string name="ic_help">Help</string>
+    <string name="ic_account_profile">Account</string>
+    <string name="ic_lock_profile">Password</string>
+    <string name="ic_theme_profile">Theme</string>
+    <string name="ic_language_profile">Language</string>
 
     <!-- Home -->
     <string name="welcome">Selamat Datang</string>
@@ -20,5 +27,20 @@
     <string name="saldo_riwayat">Saldo &amp; Riwayat </string>
     <string name="location_user">Lokasi Anda</string>
     <string name="name_user">Gede Dito</string>
+
+    <!-- My Profile -->
+    <string name="title_profile">My Profile</string>
+    <string name="email_user">dicoding.org.com</string>
+    <string name="txtAccount">Account</string>
+    <string name="txtAccount_isi">Username, edit profile</string>
+    <string name="txtPrivacy">Privacy</string>
+    <string name="txtPrivacy_isi">Change password, live location</string>
+    <string name="txtTheme">Themes</string>
+    <string name="txtTheme_isi">Dark mode, light mode</string>
+    <string name="txtLanguage">Language</string>
+    <string name="txtLanguage_isi">English, (phone language)</string>
+    <string name="txtAbout">About</string>
+    <string name="txtAbout_isi">Helper center, about us</string>
+    <string name="txtFrom">From</string>
 
 </resources>
