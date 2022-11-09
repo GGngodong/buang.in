@@ -1,4 +1,4 @@
-package com.capstone.c22018.buangin
+package com.capstone.c22018.buangin.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

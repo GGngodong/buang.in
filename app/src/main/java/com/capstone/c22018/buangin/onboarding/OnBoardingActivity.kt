@@ -1,7 +1,8 @@
-package com.capstone.c22018.buangin
+package com.capstone.c22018.buangin.onboarding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.capstone.c22018.buangin.R
 
 class OnBoardingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
