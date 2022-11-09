@@ -340,6 +340,7 @@
                 android:layout_height="60dp"
                 android:layout_margin="30dp"
                 android:text="Jemput Sampah"
+                android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
