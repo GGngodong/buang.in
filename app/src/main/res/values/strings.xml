@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Buang.in</string>
 
+    <string name="jenisSampah">Jenis - jenis Sampah</string>
+    <string name="jemputSampah">Jemput Sampah</string>
+    <string name="splash">Splash Screen</string>
+
     <!-- Image Content Description -->
     <string name="bg_home">Background Home</string>
     <string name="img_profile">Image Profile</string>
