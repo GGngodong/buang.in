@@ -60,4 +60,11 @@
     <string name="desc_onbrd4">Dari jumlah total limbah yang dihasilkan oleh kegiatan pelayanan kesehatan,
         sekitar 85% adalah limbah umum yang tidak berbahaya</string>
 
+    <string-array name="kategori_sampah">
+        <item>Plastik</item>
+        <item>Logam</item>
+        <item>Kertas</item>
+        <item>Karet</item>
+    </string-array>
+
 </resources>

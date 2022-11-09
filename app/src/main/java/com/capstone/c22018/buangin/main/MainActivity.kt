@@ -17,9 +17,5 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, ProfileActivity::class.java))
-        }, 3000L)
-
     }
 }

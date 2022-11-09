@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.capstone.c22018.buangin.onboarding.OnBoardingActivity
+import com.capstone.c22018.buangin.InputDataActivity
 import com.capstone.c22018.buangin.databinding.ActivitySplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -20,7 +20,7 @@ class SplashScreenActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this@SplashScreenActivity, OnBoardingActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, InputDataActivity::class.java))
             finish()
         }, 3000L)
     }
