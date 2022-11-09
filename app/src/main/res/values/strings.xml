@@ -47,4 +47,17 @@
     <string name="txtAbout_isi">Helper center, about us</string>
     <string name="txtFrom">From</string>
 
+    <!-- Bagian Onboarding -->
+    <string name="title_onboarding">Tau ga sih?</string>
+    <string name="desc_onbrd1">Menurut data Asosiasi Industri Plastik Indonesia (Inaplas) dan
+        Badan Pusat Statistik (BPS) pada 2021, limbah plastik yang dihasilkan Indonesia mencapai 66 juta ton per tahun.
+        Dari jumlah tersebut, sebanyak 3,2 juta ton terbuang ke laut</string>
+    <string name="desc_onbrd2">Pemilahan sampah merupakan kegiatan yang penting dalam
+        penanganan dan pewadahan sampah dari sumbernya, karena memudahkan dalam proses manajemen persampahan</string>
+    <string name="desc_onbrd3">Kerja Bakti Lingkungan dilakukan untuk menjaga keberlangsungan hidup
+        manusia, hewan, dan tumbuhan. Jika tidak dirawat dengan baik, akan terjadi kerusakan pada alam dan bisa
+        mengacam setiap makhluk hidup</string>
+    <string name="desc_onbrd4">Dari jumlah total limbah yang dihasilkan oleh kegiatan pelayanan kesehatan,
+        sekitar 85% adalah limbah umum yang tidak berbahaya</string>
+
 </resources>
