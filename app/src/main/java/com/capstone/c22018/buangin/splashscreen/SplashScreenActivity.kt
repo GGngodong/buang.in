@@ -1,4 +1,4 @@
-package com.capstone.c22018.buangin.activity
+package com.capstone.c22018.buangin.splashscreen
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper
 import com.capstone.c22018.buangin.R
 import com.capstone.c22018.buangin.databinding.ActivitySplashScreenBinding
+import com.capstone.c22018.buangin.ui.login.LoginActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
