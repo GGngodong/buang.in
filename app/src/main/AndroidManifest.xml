@@ -14,19 +14,19 @@
         android:theme="@style/Theme.Buangin"
         tools:targetApi="31">
         <activity
-            android:name=".OnBoardingActivity"
+            android:name=".onboarding.OnBoardingActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.capstone.c22018.buangin.ui.home.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.RegisterActivity"
+            android:name="com.capstone.c22018.buangin.ui.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="com.capstone.c22018.buangin.ui.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SplashScreenActivity"
+            android:name=".splashscreen.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
