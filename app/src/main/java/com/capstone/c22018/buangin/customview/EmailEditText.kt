@@ -35,19 +35,17 @@ class EmailEditText : TextInputEditText {
         textAlignment = View.TEXT_ALIGNMENT_TEXT_START
     }
 
-    private fun init(){
+    private fun init() {
         maxLines = 1
         inputType = InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS
 
         clearButton = ContextCompat.getDrawable(context, R.drawable.ic_close) as Drawable
 
-        addTextChangedListener(object : TextWatcher{
-            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int){
-
+        addTextChangedListener(object: TextWatcher {
+            override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
             }
 
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int){
-
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
             }
 
             override fun afterTextChanged(s: Editable) {
@@ -63,15 +61,15 @@ class EmailEditText : TextInputEditText {
         })
     }
 
-    private fun showError(){
+    private fun showError() {
         error = "Must be filled"
     }
 
-    private fun showClearButton(){
+    private fun showClearButton() {
         setButtonDrawables(endOfTheText = clearButton)
     }
 
-    private fun hideClearButton(){
+    private fun hideClearButton() {
         setButtonDrawables()
     }
 
@@ -88,4 +86,5 @@ class EmailEditText : TextInputEditText {
             bottomOfTheText
         )
     }
+
 }

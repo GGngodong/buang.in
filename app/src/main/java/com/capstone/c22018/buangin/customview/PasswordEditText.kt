@@ -18,58 +18,61 @@ class PasswordEditText : TextInputEditText, View.OnTouchListener {
 
     private lateinit var eyeIcon: Drawable
 
-    constructor(context: Context): super(context) {
+    constructor(context: Context) : super(context) {
         init()
     }
 
-    constructor(context: Context, attrs: AttributeSet): super(context, attrs) {
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         init()
     }
 
-    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr){
+    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    ) {
         init()
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
         showEyeButton()
     }
 
-    private fun init(){
+    private fun init() {
         eyeIcon = ContextCompat.getDrawable(context, R.drawable.ic_eye) as Drawable
 
         setOnTouchListener(this)
 
         addTextChangedListener(object : TextWatcher {
 
-            override fun beforeTextChanged(S: CharSequence, start: Int, count: Int, after: Int){
-
+            override fun beforeTextChanged(S: CharSequence, start: Int, count: Int, after: Int) {
             }
 
-            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int){
-
+            override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
             }
 
-            override fun afterTextChanged(s: Editable){
+            override fun afterTextChanged(s: Editable) {
                 if (s.toString().length < 6) showError()
             }
 
         })
+
     }
 
-    private fun showError(){
-        error = "Password must be at least 6 characters"
+    private fun showError() {
+        error = "Password is not valid"
     }
 
-    private fun showEyeButton(){
-        setButtonDrawable(endOfTheText = eyeIcon)
+    private fun showEyeButton() {
+        setButtonDrawables(endOfTheText = eyeIcon)
     }
 
-    private fun hideEyeButton(){
-        setButtonDrawable()
+    private fun hideEyeButton() {
+        setButtonDrawables()
     }
 
-    private fun setButtonDrawable(
+    private fun setButtonDrawables(
         startOfTheText: Drawable? = null,
         topOfTheText: Drawable? = null,
         endOfTheText: Drawable? = null,
@@ -96,6 +99,7 @@ class PasswordEditText : TextInputEditText, View.OnTouchListener {
                 eyeButtonStart = (width - paddingEnd - eyeIcon.intrinsicWidth).toFloat()
                 if (event.x > eyeButtonStart) isEyeButtonClicked = true
             }
+
             if (isEyeButtonClicked) {
                 return when (event.action) {
                     MotionEvent.ACTION_DOWN -> {
@@ -117,4 +121,5 @@ class PasswordEditText : TextInputEditText, View.OnTouchListener {
         }
         return false
     }
+
 }

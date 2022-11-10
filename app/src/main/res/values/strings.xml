@@ -67,4 +67,40 @@
         <item>Karet</item>
     </string-array>
 
+    <!-- Image Content Register -->
+    <string name="line">Garis</string>
+    <string name="img_fb">Facebook</string>
+    <string name="img_google">Google</string>
+    <string name="img_apple">IOS</string>
+    <string name="icon_back">Back</string>
+
+    <!-- Login Dan Register -->
+    <string name="tvEmail">Email</string>
+    <string name="edtEmail">Enter your email</string>
+    <string name="tvPassword">Password</string>
+    <string name="edtPassword">Enter your password</string>
+    <string name="tvName">Name</string>
+    <string name="edtName">Enter your name</string>
+
+    <!-- Teks Tambahan -->
+    <string name="or">OR</string>
+
+    <!-- Bagian Login -->
+    <string name="img_login">Image Login</string>
+    <string name="title_login">Login</string>
+    <string name="subTitle_login">Please login to continue</string>
+    <string name="btnLogin">Login</string>
+    <string name="forgetPass">Forgot Password ?</string>
+    <string name="sosmed_login">Sosial Media Login</string>
+    <string name="txtRegister">I don\'t have an account</string>
+    <string name="tvRegister">\tRegister</string>
+
+    <!-- Bagian Register -->
+    <string name="title_register">Create Account</string>
+    <string name="subTitle_register">Please fill the input below here</string>
+    <string name="btnRegister">Register</string>
+    <string name="sosmed_register">Sosial Media Register</string>
+    <string name="txtLogin">I already have an account</string>
+    <string name="tvLogin">\tLogin</string>
+
 </resources>

@@ -1,12 +1,11 @@
 package com.capstone.c22018.buangin.customview
 
+import android.content.Context
 import android.graphics.Canvas
 import android.graphics.drawable.Drawable
 import android.text.Editable
-import android.text.InputType
 import android.text.TextWatcher
-import android.util.Patterns
-import android.view.View
+import android.util.AttributeSet
 import androidx.core.content.ContextCompat
 import com.capstone.c22018.buangin.R
 import com.google.android.material.textfield.TextInputEditText
@@ -15,31 +14,26 @@ class NameEditText : TextInputEditText {
 
     private lateinit var clearButton: Drawable
 
-    constructor(context: android.content.Context): super(context) {
+    constructor(context: Context) : super(context) {
         init()
     }
 
-    constructor(context: android.content.Context, attrs: android.util.AttributeSet): super(context, attrs) {
+    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         init()
     }
 
-    constructor(context: android.content.Context, attrs: android.util.AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr){
+    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
         init()
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
-        hint = ""
-        textAlignment = View.TEXT_ALIGNMENT_TEXT_START
     }
 
     private fun init() {
-        maxLines = 1
-        inputType = InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS
-
         clearButton = ContextCompat.getDrawable(context, R.drawable.ic_close) as Drawable
 
-        addTextChangedListener(object: TextWatcher {
+        addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
             }
 
@@ -47,14 +41,9 @@ class NameEditText : TextInputEditText {
             }
 
             override fun afterTextChanged(s: Editable) {
-
                 if (s.toString().isNotEmpty()) showClearButton() else hideClearButton()
 
                 if (s.toString().isEmpty()) showError()
-
-                if (!Patterns.EMAIL_ADDRESS.matcher(s).matches())
-                    error = "Email is not valid"
-
             }
         })
     }
@@ -64,7 +53,7 @@ class NameEditText : TextInputEditText {
     }
 
     private fun showClearButton() {
-        setButtonDrawables(endOfTheText = clearButton)
+        setButtonDrawables()
     }
 
     private fun hideClearButton() {
@@ -84,4 +73,5 @@ class NameEditText : TextInputEditText {
             bottomOfTheText
         )
     }
+
 }
