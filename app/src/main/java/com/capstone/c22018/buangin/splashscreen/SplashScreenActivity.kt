@@ -5,9 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import com.capstone.c22018.buangin.R
 import com.capstone.c22018.buangin.databinding.ActivitySplashScreenBinding
-import com.capstone.c22018.buangin.ui.login.LoginActivity
+import com.capstone.c22018.buangin.onboarding.OnBoardingActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -15,14 +14,12 @@ class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
-
-        supportActionBar?.hide()
+        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this@SplashScreenActivity, LoginActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, OnBoardingActivity::class.java))
             finish()
         }, 3000L)
-
     }
-    }
+}

@@ -43,12 +43,10 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/btnLogin"
-            android:textColor="@color/colorPrimary"
             android:textSize="16sp"
-            android:backgroundTint="@color/white"
-            app:cornerRadius="5dp"
-            app:strokeColor="@color/colorPrimary"
-            app:strokeWidth="2dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/bg_button2"
             android:layout_marginEnd="16dp"/>
 
         <com.google.android.material.button.MaterialButton
@@ -56,7 +54,7 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/btnRegister"
-            android:theme="@style/ButtonGreen" />
+            style="@style/ButtonGreen" />
 
     </LinearLayout>
 
