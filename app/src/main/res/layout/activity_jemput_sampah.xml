@@ -164,9 +164,9 @@
                                 android:layout_below="@id/txtKategori_sampah"
                                 android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
-                                android:layout_marginTop="12dp"
+                                android:layout_marginTop="20dp"
                                 android:layout_marginEnd="12dp"
-                                android:src="@drawable/ic_spinner"/>
+                                android:src="@drawable/ic_spinner" />
 
                         </RelativeLayout>
 
@@ -272,13 +272,83 @@
 
                         </LinearLayout>
 
+                    </LinearLayout>
 
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="Masukan alamat"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:imeOptions="actionNext"
+                            android:scrollbars="vertical"
+                            android:minHeight="50dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Catatan Tambahan (Opsional)"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"/>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:hint="Masukan catatan tambahan anda"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:imeOptions="actionDone"/>
 
                     </LinearLayout>
 
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="30dp"
+                android:text="@string/jmpt_sampah"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:theme="@style/Theme.MaterialComponents"
+                android:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="50dp"
+                app:elevation="5dp"
+                app:rippleColor="@color/colorPrimaryDark" />
 
         </LinearLayout>
 
