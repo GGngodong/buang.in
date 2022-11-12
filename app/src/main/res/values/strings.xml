@@ -5,6 +5,10 @@
     <string name="jemputSampah">Jemput Sampah</string>
     <string name="splash">Splash Screen</string>
 
+    <string name="notFound">Oops, riwayat masih kosong!</string>
+    <string name="image_profile">Image Profile</string>
+    <string name="riwayat_title">Saldo &amp; Riwayat Anda</string>
+    <string name="saldo">Saldo Anda :</string>
     <!-- Image Content Description -->
     <string name="bg_home">Background Home</string>
     <string name="img_profile">Image Profile</string>
