@@ -14,6 +14,7 @@
         android:src="@drawable/ic_back_white"
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
+        android:contentDescription="@string/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -21,7 +22,7 @@
         android:id="@+id/titleProfile"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="My Profile"
+        android:text="@string/title_profile"
         android:textSize="24sp"
         android:textStyle="bold"
         android:gravity="center"
@@ -58,6 +59,7 @@
                     android:id="@+id/Profile_user"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
+                    android:contentDescription="@string/img_profile"
                     android:src="@drawable/ic_profile" />
 
                 <LinearLayout
@@ -80,7 +82,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="dito999dito@gmail.com"
+                        android:text="@string/email_user"
                         android:textSize="14sp"
                         android:textStyle="italic"
                         android:layout_marginTop="4dp"/>
@@ -107,6 +109,7 @@
                     android:id="@+id/icAccount"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:contentDescription="@string/ic_account_profile"
                     android:src="@drawable/ic_account_black"/>
 
                 <LinearLayout
@@ -121,7 +124,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Account"
+                        android:text="@string/txtAccount"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
@@ -130,7 +133,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Username, edit profile"
+                        android:text="@string/txtAccount_isi"
                         android:textSize="14sp"/>
 
                 </LinearLayout>
@@ -148,6 +151,7 @@
                     android:id="@+id/icPrivacy"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:contentDescription="@string/ic_lock_profile"
                     android:src="@drawable/ic_lock_black"/>
 
                 <LinearLayout
@@ -162,7 +166,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Privacy"
+                        android:text="@string/txtPrivacy"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
@@ -171,7 +175,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Change password, live location"
+                        android:text="@string/txtPrivacy_isi"
                         android:textSize="14sp"/>
 
                 </LinearLayout>
@@ -189,6 +193,7 @@
                     android:id="@+id/icThemes"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:contentDescription="@string/ic_theme_profile"
                     android:src="@drawable/ic_light_mode"/>
 
                 <LinearLayout
@@ -203,7 +208,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Themes"
+                        android:text="@string/txtTheme"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
@@ -212,7 +217,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Dark mode, light mode"
+                        android:text="@string/txtTheme_isi"
                         android:textSize="14sp"/>
 
                 </LinearLayout>
@@ -230,6 +235,7 @@
                     android:id="@+id/icLanguage"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:contentDescription="@string/ic_language_profile"
                     android:src="@drawable/ic_language"/>
 
                 <LinearLayout
@@ -244,7 +250,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Language"
+                        android:text="@string/txtLanguage"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
@@ -253,7 +259,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="English, (phone language)"
+                        android:text="@string/txtLanguage_isi"
                         android:textSize="14sp"/>
 
                 </LinearLayout>
@@ -271,6 +277,7 @@
                     android:id="@+id/icAbout"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
+                    android:contentDescription="@string/ic_help"
                     android:src="@drawable/ic_help"/>
 
                 <LinearLayout
@@ -285,7 +292,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="About"
+                        android:text="@string/txtAbout"
                         android:textSize="18sp"
                         android:textStyle="bold"
                         android:textColor="@color/black"/>
@@ -294,7 +301,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Help center, about us"
+                        android:text="@string/txtAbout_isi"
                         android:textSize="14sp"/>
 
                 </LinearLayout>
