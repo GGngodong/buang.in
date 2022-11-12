@@ -22,7 +22,7 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun setActionBtn() {
 
-        binding.iconBack.setOnClickListener {
+        binding.icBack.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.capstone.c22018.buangin.R
 import com.capstone.c22018.buangin.databinding.ActivityMainBinding
+import com.capstone.c22018.buangin.ui.jemput_sampah.JemputSampahActivity
 import com.capstone.c22018.buangin.ui.jenis_sampah.JenisSampahActivity
 import com.capstone.c22018.buangin.ui.profile.ProfileActivity
 import com.capstone.c22018.buangin.ui.riwayat.RiwayatActivity
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.cvSaldoRiwayat.setOnClickListener {
             startActivity(Intent(this, RiwayatActivity::class.java))
+        }
+
+        binding.cvJemputSampah.setOnClickListener {
+            startActivity(Intent(this, JemputSampahActivity::class.java))
         }
 
     }

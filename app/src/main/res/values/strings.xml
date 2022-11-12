@@ -9,6 +9,7 @@
     <string name="image_profile">Image Profile</string>
     <string name="riwayat_title">Saldo &amp; Riwayat Anda</string>
     <string name="saldo">Saldo Anda :</string>
+
     <!-- Image Content Description -->
     <string name="bg_home">Background Home</string>
     <string name="img_profile">Image Profile</string>
@@ -20,6 +21,7 @@
     <string name="ic_back">Back</string>
     <string name="ic_line">Line</string>
     <string name="ic_help">Help</string>
+    <string name="ic_info">Info</string>
     <string name="ic_account_profile">Account</string>
     <string name="ic_lock_profile">Password</string>
     <string name="ic_theme_profile">Theme</string>
@@ -109,5 +111,21 @@
     <string name="deskripsi_jenis">Sampah merupakan hasil produksi manusia yang tidak akan pernah luput dari kehidupan sehari-hari. Lalu, jenis-jenis sampah apa yang biasanya kita hasilkan? Yuk, kenali di sini.\n\nSampah jika dibiarkan saja akan mengganggu kebersihan lingkungan secara umum. Sampah dapat dibedakan menjadi dua macam, yaitu:</string>
     <string name="anorganik"><b>1. Sampah Padat (Anorganik)</b>\n\nSampah anorganik adalah sampah yang terdiri atas bahan-bahan anorganik. Contoh bahan-bahan anorganik adalah bahan logam, plastik, kaca, karet, dan kaleng. Sifat sampah anorganik adalah tahan lama dan sukar membusuk.\n\nSampah ini tidak mudah diuraikan oleh mikroorganisme tanah. Apabila dibuang sembarangan, sampah anorganik dapat menimbulkan pencemaran tanah.</string>
     <string name="organik"><b>2. Sampah Basah (Organik)</b>\n\nSampah organik adalah sampah yang terdiri atas bahan-bahan organik. Sifat sampah organik adalah tidak tahan lama dan cepat membusuk. Biasanya sampah jenis ini berasal dari makhluk hidup. Contohnya adalah sayur-sayuran, buah-buah yang membusuk, sisa nasi, daun, dan sebagainya.\n\nSampah organik mudah diuraikan mikroorganisme tanah. Hanya saja jenis sampah akan menimbulkan bau kurang sedap jika tidak dikelola dengan baik.</string>
+
+    <!-- Bagian Jemput Sampah -->
+    <string name="headline_jmpt_sampah">Mohon isi data dibawah ini dengan benar</string>
+    <string name="txtNama_pengguna">Nama Pengguna</string>
+    <string name="inputNama_pengguna">Masukan nama lengkap</string>
+    <string name="txtKategori_sampah">Kategori Sampah</string>
+    <string name="txtBerat">Berat (Kg)</string>
+    <string name="inputBerat">5 Kg</string>
+    <string name="txtHarga_berat">Harga (per Kg)</string>
+    <string name="inputHarga">Rp. 15000/Kg</string>
+    <string name="txtTanggal_penjemputan">Tanggal Penjemputan</string>
+    <string name="inputTanggal_penjemputan">Masukan tanggal</string>
+    <string name="txtAlamat">Alamat</string>
+    <string name="inputAlamat">Masukan alamat</string>
+    <string name="txtCatatan_tambahan">Catatan Tambahan (opsional)</string>
+    <string name="inputCatatan">Masukan catatan tambahan anda</string>
 
 </resources>
