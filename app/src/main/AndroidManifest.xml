@@ -14,7 +14,10 @@
         android:theme="@style/Theme.Buangin"
         tools:targetApi="31">
         <activity
-            android:name=".RiwayatActivity"
+            android:name=".JemputSampahActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.riwayat.RiwayatActivity"
             android:exported="false" />
         <activity
             android:name=".ui.jenis_sampah.JenisSampahActivity"

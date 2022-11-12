@@ -7,6 +7,7 @@ import com.capstone.c22018.buangin.R
 import com.capstone.c22018.buangin.databinding.ActivityMainBinding
 import com.capstone.c22018.buangin.ui.jenis_sampah.JenisSampahActivity
 import com.capstone.c22018.buangin.ui.profile.ProfileActivity
+import com.capstone.c22018.buangin.ui.riwayat.RiwayatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.cvJenisSampah.setOnClickListener {
             startActivity(Intent(this, JenisSampahActivity::class.java))
+        }
+
+        binding.cvSaldoRiwayat.setOnClickListener {
+            startActivity(Intent(this, RiwayatActivity::class.java))
         }
 
     }
