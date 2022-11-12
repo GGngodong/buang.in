@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Buangin"
         tools:targetApi="31">
         <activity
-            android:name=".JenisSampahActivity"
+            android:name=".ui.jenis_sampah.JenisSampahActivity"
             android:exported="false" />
         <activity
             android:name=".ui.profile.ProfileActivity"

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.capstone.c22018.buangin.R
 import com.capstone.c22018.buangin.databinding.ActivityMainBinding
+import com.capstone.c22018.buangin.ui.jenis_sampah.JenisSampahActivity
 import com.capstone.c22018.buangin.ui.profile.ProfileActivity
 
 class MainActivity : AppCompatActivity() {
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
+        binding.cvJenisSampah.setOnClickListener {
+            startActivity(Intent(this, JenisSampahActivity::class.java))
+        }
 
     }
 }

@@ -14,6 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:src="@drawable/bg_rounded_bottom"
+            android:contentDescription="@string/bg_home"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -38,6 +39,7 @@
                     android:id="@+id/photoProfile"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:contentDescription="@string/img_profile"
                     android:layout_alignParentEnd="true"
                     android:layout_centerInParent="true"
                     android:src="@drawable/ic_profile" />
@@ -83,6 +85,7 @@
                     android:id="@+id/icLocation_user"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:contentDescription="@string/ic_location"
                     android:layout_gravity="center"
                     android:layout_marginStart="20dp"
                     android:src="@drawable/ic_location"/>
@@ -129,7 +132,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerInParent="true"
                     android:padding="12dp"
-                    android:src="@drawable/tmpt_sampah" />
+                    android:src="@drawable/tmpt_sampah"
+                    android:contentDescription="@string/img_logo_home"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -194,7 +198,7 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView android:id="@+id/jmptSampah"
+                <androidx.cardview.widget.CardView android:id="@+id/cvJemput_sampah"
                     android:layout_width="0dp"
                     android:layout_height="180dp"
                     android:layout_margin="12dp"
@@ -212,7 +216,8 @@
                             android:id="@+id/icJemput_sampah"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/jmpt_sampah"/>
+                            android:src="@drawable/jmpt_sampah"
+                            android:contentDescription="@string/img_truk"/>
 
                         <TextView
                             android:id="@+id/txtJemput_sampah"
@@ -233,7 +238,7 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView android:id="@+id/jnsSampah"
+                <androidx.cardview.widget.CardView android:id="@+id/cvJenis_sampah"
                     android:layout_width="0dp"
                     android:layout_height="180dp"
                     android:layout_margin="12dp"
@@ -251,7 +256,8 @@
                             android:id="@+id/icJenis_sampah"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
-                            android:src="@drawable/ic_kategori"/>
+                            android:src="@drawable/ic_kategori"
+                            android:contentDescription="@string/img_tmpt_sampah"/>
 
                         <TextView
                             android:id="@+id/txtJenis_sampah"
@@ -298,7 +304,8 @@
                         <ImageView
                             android:layout_width="120dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/ic_saldo_riwayat"/>
+                            android:src="@drawable/ic_saldo_riwayat"
+                            android:contentDescription="@string/img_recycle"/>
 
                         <TextView
                             android:layout_width="wrap_content"
