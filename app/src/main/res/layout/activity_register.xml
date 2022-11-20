@@ -238,13 +238,6 @@
             android:layout_marginEnd="8dp"
             android:src="@drawable/fb" />
 
-        <ImageView
-            android:id="@+id/icon_apple"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/img_apple"
-            android:src="@drawable/apple_logo"/>
-
     </LinearLayout>
 
     <LinearLayout
