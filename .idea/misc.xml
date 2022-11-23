@@ -41,6 +41,16 @@
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/activity_themes.xml" value="0.22" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/onboarding_item.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/zidan/StudioProjects/Buangin/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="app/src/main/res/drawable/ic_baseline_verified_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_not_verified.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_verified.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_data_user.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.24951782226562505" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_on_boarding.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/onboarding_item.xml" value="0.2" />
       </map>
     </option>
   </component>
