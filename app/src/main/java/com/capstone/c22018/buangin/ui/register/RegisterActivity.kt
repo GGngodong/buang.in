@@ -1,11 +1,10 @@
 package com.capstone.c22018.buangin.ui.register
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
+import com.capstone.c22018.buangin.R
 import com.capstone.c22018.buangin.databinding.ActivityRegisterBinding
-import com.capstone.c22018.buangin.ui.login.LoginActivity
+import com.capstone.c22018.buangin.ui.register.registeruser.RegisterFragment
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -16,31 +15,17 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setActionBtn()
+        val mFragmentManager = supportFragmentManager
+        val mRegisterAccount = RegisterFragment()
+        val fragment = mFragmentManager.findFragmentByTag(RegisterFragment::class.java.simpleName)
 
-    }
-
-    private fun setActionBtn() {
-
-        binding.icBack.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }
-
-        binding.btnRegister.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }
-
-        binding.tvLogin.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-        }
-
-        binding.iconFb.setOnClickListener {
-            Toast.makeText(this, "Fitur Ini Belum Tersedia", Toast.LENGTH_SHORT).show()
-        }
-
-        binding.iconGoogle.setOnClickListener {
-            Toast.makeText(this, "Fitur Ini Belum Tersedia", Toast.LENGTH_SHORT).show()
+        if (fragment !is RegisterFragment) {
+            mFragmentManager
+                .beginTransaction()
+                .add(R.id.frame_container, mRegisterAccount, RegisterFragment::class.java.simpleName)
+                .commit()
         }
 
     }
+
 }
