@@ -25,6 +25,8 @@
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_location_black.xml" value="0.142" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_lock.xml" value="0.114" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_lock_black.xml" value="0.1" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_message.xml" value="0.142" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_monetization.xml" value="0.142" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_request_info_account.xml" value="0.142" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/ic_spinner.xml" value="0.114" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/drawable/indicator_active_background.xml" value="0.114" />
@@ -44,9 +46,11 @@
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/activity_splash_screen.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/activity_themes.xml" value="0.22" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/fragment_profile_account.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/fragment_profile_notification.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/fragment_profile_privacy.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/fragment_profile_user.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/fragment_register.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/ic_monetization.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/Asus/AndroidDeveloper/buang.in/app/src/main/res/layout/onboarding_item.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/zidan/StudioProjects/Buangin/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/drawable/ic_baseline_verified_24.xml" value="0.1" />
