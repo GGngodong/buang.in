@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Buangin"
         tools:targetApi="31">
         <activity
+            android:name=".ui.register.RegisterPhotoActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.profile.privacy.ProfilePrivacyActivity"
             android:exported="false" />
         <activity
@@ -44,7 +47,7 @@
             android:name="com.capstone.c22018.buangin.ui.home.MainActivity"
             android:exported="false" />
         <activity
-            android:name="com.capstone.c22018.buangin.ui.register.RegisterActivity"
+            android:name=".ui.register.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ui.login.LoginActivity"
