@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.capstone.c22018.buangin.databinding.FragmentProfileUserBinding
-import com.capstone.c22018.buangin.ui.profile.privacy.ProfilePrivacyFragment
 
 class ProfileUserFragment : Fragment() {
 
