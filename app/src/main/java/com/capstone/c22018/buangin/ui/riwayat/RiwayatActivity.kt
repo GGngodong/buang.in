@@ -20,4 +20,5 @@ class RiwayatActivity : AppCompatActivity() {
         }
 
     }
+
 }
