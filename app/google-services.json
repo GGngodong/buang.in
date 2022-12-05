@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "450116091717",
+    "firebase_url": "https://projectcapstonebuangin-default-rtdb.firebaseio.com",
+    "project_id": "projectcapstonebuangin",
+    "storage_bucket": "projectcapstonebuangin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450116091717:android:925e285cdd4572aab8c82c",
+        "android_client_info": {
+          "package_name": "com.capstone.c22018.buangin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450116091717-610g8oq0h1ne4o0c8032d0a9gtpvg517.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capstone.c22018.buangin",
+            "certificate_hash": "8434f9b5c99c2a327437beb2a83e7a2cc656bf46"
+          }
+        },
+        {
+          "client_id": "450116091717-2v5slcecij5h6em59fdklj3ou2o0kska.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdaC9Bg-ZCXcEOif03V4o4ptZFJe1bV0w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450116091717-2v5slcecij5h6em59fdklj3ou2o0kska.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
