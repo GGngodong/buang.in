@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'kotlin-parcelize'
     id 'com.google.gms.google-services'
 }
 
@@ -60,4 +61,11 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:31.1.0')
     implementation 'com.google.firebase:firebase-analytics'
 
+    // Room Database
+    implementation "androidx.room:room-rxjava3:2.4.3"
+    implementation "androidx.room:room-runtime:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
 }
