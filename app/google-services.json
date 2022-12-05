@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "450116091717-gsmo9l5o6dm08kaqds8quif3kkkll49c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capstone.c22018.buangin",
+            "certificate_hash": "688df7b7b937b3fea7c458f5fc6dc588a8a6c4fd"
+          }
+        },
+        {
           "client_id": "450116091717-2v5slcecij5h6em59fdklj3ou2o0kska.apps.googleusercontent.com",
           "client_type": 3
         }
