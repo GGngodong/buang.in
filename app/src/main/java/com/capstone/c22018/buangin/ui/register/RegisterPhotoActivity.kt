@@ -52,6 +52,9 @@ class RegisterPhotoActivity : AppCompatActivity() {
 
     }
 
+
+
+
     private fun startCameraX() {
         val intent = Intent(this, CameraActivity::class.java)
         launcherIntentCameraX.launch(intent)
