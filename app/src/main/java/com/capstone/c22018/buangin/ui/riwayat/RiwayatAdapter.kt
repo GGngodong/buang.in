@@ -1,15 +1,17 @@
 package com.capstone.c22018.buangin.ui.riwayat
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.capstone.c22018.buangin.database.BankSampahModel
 import com.capstone.c22018.buangin.databinding.HistoryItemBinding
 
-class RiwayatAdapter(modelInputList: MutableList<BankSampahModel>) :
+class RiwayatAdapter(context: Context, modelInputList: MutableList<BankSampahModel>, adapterCallback: RiwayatAdapterCallback) :
     RecyclerView.Adapter<RiwayatAdapter.MyViewHolder>() {
 
     var modelList : MutableList<BankSampahModel>
+    var mAdapterCallback: RiwayatAdapterCallback
 
     fun setUpData (modelList : List<BankSampahModel>) {
         this.modelList.clear()
@@ -32,8 +34,8 @@ class RiwayatAdapter(modelInputList: MutableList<BankSampahModel>) :
                 }
 
                 imageDelete.setOnClickListener {
-                    modelList.removeAt(adapterPosition)
-                    notifyItemRemoved(adapterPosition)
+                    val modelLaundry: BankSampahModel = modelList[adapterPosition]
+                    mAdapterCallback.onDelete(modelLaundry)
                 }
             }
 
@@ -48,7 +50,6 @@ class RiwayatAdapter(modelInputList: MutableList<BankSampahModel>) :
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.bind(modelList[position])
-        TODO("kayanya harus ditambahin set item click listener")
 
     }
 
@@ -58,11 +59,10 @@ class RiwayatAdapter(modelInputList: MutableList<BankSampahModel>) :
 
     init {
         modelList = modelInputList
+        mAdapterCallback = adapterCallback
     }
-    interface RiwayatAdapterCallback {
-        fun onDelete(modelDatabase: BankSampahModel?){
-            TODO("Opisional kalo misalnya yg image delete di klik gabisa dihapus")
-        }
 
+    interface RiwayatAdapterCallback {
+        fun onDelete(modelDatabase: BankSampahModel?)
     }
 }
