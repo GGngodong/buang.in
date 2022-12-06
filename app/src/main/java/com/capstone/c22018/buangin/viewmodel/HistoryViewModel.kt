@@ -13,8 +13,8 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 
 class HistoryViewModel (application: Application) : AndroidViewModel(application){
 
-    private var totalBalance : LiveData<Int>
-    private var dataBank: LiveData<List<BankSampahModel>>
+    var totalBalance : LiveData<Int>
+    var dataBank: LiveData<List<BankSampahModel>>
     private var bankSampahDao : BankSampahDao ? = null
 
     fun deleteDataById(uid : Int) {
