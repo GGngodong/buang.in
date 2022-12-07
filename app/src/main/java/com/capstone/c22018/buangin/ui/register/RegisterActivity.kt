@@ -67,9 +67,7 @@ class RegisterActivity : AppCompatActivity() {
         user.email = edtEmail
         user.password = edtPass
 
-        if (edtName != null) {
-            checkingUsername(edtName, user)
-        }
+        checkingUsername(edtName, user)
     }
 
     private fun checkingUsername(iName: String, data: User) {
@@ -82,7 +80,6 @@ class RegisterActivity : AppCompatActivity() {
                     mFirebaseDatabase.child(iName).setValue(data)
 
                     preferences.setValues("nama", data.name.toString())
-                    preferences.setValues("saldo", "")
                     preferences.setValues("url", "")
                     preferences.setValues("email", data.email.toString())
                     preferences.setValues("status", "1")
@@ -98,12 +95,11 @@ class RegisterActivity : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@RegisterActivity, "${error.message}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@RegisterActivity, error.message, Toast.LENGTH_SHORT).show()
             }
 
         })
     }
-
 
     private fun showLoading(loading: Boolean) {
         if (loading) {

@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.capstone.c2218.buangin", appContext.packageName)
+        assertEquals("com.capstone.c22018.buangin", appContext.packageName)
     }
 }

@@ -9,5 +9,4 @@ data class User(
     var name: String ?= "",
     var password: String ?= "",
     var url: String ?= "",
-    var saldo: String ?= ""
 ): Parcelable
