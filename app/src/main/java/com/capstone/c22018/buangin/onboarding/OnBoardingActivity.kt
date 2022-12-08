@@ -12,6 +12,7 @@ import com.capstone.c22018.buangin.R
 import com.capstone.c22018.buangin.databinding.ActivityOnBoardingBinding
 import com.capstone.c22018.buangin.ui.login.LoginActivity
 import com.capstone.c22018.buangin.ui.register.RegisterActivity
+import com.capstone.c22018.buangin.utility.Preferences
 
 class OnBoardingActivity : AppCompatActivity() {
 
@@ -19,10 +20,18 @@ class OnBoardingActivity : AppCompatActivity() {
     private lateinit var onboardingItemAdapter: OnboardingItemAdapter
     private lateinit var indicatorsContainer: LinearLayout
 
+    private lateinit var preferences: Preferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        preferences = Preferences(this)
+        if (preferences.getValues("onboarding").equals("1")) {
+            val intent = Intent(this@OnBoardingActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
 
         setOnboardingItems()
         setupIndicators()
