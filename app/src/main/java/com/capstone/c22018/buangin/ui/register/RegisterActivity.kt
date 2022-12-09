@@ -9,6 +9,7 @@ import com.capstone.c22018.buangin.database.User
 import com.capstone.c22018.buangin.databinding.ActivityRegisterBinding
 import com.capstone.c22018.buangin.ui.login.LoginActivity
 import com.capstone.c22018.buangin.utility.Preferences
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class RegisterActivity : AppCompatActivity() {
@@ -21,6 +22,8 @@ class RegisterActivity : AppCompatActivity() {
 
     private lateinit var preferences: Preferences
 
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
@@ -32,17 +35,19 @@ class RegisterActivity : AppCompatActivity() {
 
         preferences = Preferences(this)
 
+        auth = FirebaseAuth.getInstance()
+
         setActionBtn()
 
     }
 
     private fun setActionBtn() {
-
         binding.btnRegister.setOnClickListener {
             val edtName = binding.edtNameRegister.text.toString()
             val edtEmail = binding.edtEmail.text.toString()
             val edtPass = binding.edtPassword.text.toString()
 
+            regisAccount(edtEmail, edtPass)
             registerAccount(edtName, edtEmail, edtPass)
         }
 
@@ -57,7 +62,36 @@ class RegisterActivity : AppCompatActivity() {
         binding.iconGoogle.setOnClickListener {
             Toast.makeText(this, "Fitur Ini Belum Tersedia", Toast.LENGTH_SHORT).show()
         }
+    }
 
+    // Auth
+    private fun regisAccount(edtEmail: String, edtPass: String) {
+        showLoading(true)
+        auth.createUserWithEmailAndPassword(edtEmail, edtPass)
+            .addOnCompleteListener(this) {
+                if (it.isSuccessful) {
+                    showLoading(false)
+                    emailVerification()
+                    Toast.makeText(this, "Register Berhasil, Silahkan Verifikasi Email", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, RegisterPhotoActivity::class.java)
+                    startActivity(intent)
+                    finishAffinity()
+                } else {
+                    showLoading(false)
+                    Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_LONG).show()
+                }
+            }
+    }
+
+    private fun emailVerification() {
+        val user = auth.currentUser
+        user?.sendEmailVerification()?.addOnCompleteListener {
+            if (it.isSuccessful) {
+                Toast.makeText(this, "Email Verifikasi Telah Dikirim", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "${it.exception?.message}", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     // RealtimeDatabase
@@ -88,9 +122,6 @@ class RegisterActivity : AppCompatActivity() {
                     val intent = Intent(this@RegisterActivity,
                         RegisterPhotoActivity::class.java).putExtra("data", data.name)
                     startActivity(intent)
-                } else {
-                    showLoading(false)
-                    Toast.makeText(this@RegisterActivity, "Account sudah terdaftar", Toast.LENGTH_SHORT).show()
                 }
             }
 

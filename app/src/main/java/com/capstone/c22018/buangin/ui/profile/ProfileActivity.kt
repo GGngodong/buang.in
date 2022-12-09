@@ -9,22 +9,26 @@ import com.capstone.c22018.buangin.ui.profile.account.ProfileAccountActivity
 import com.capstone.c22018.buangin.ui.profile.help.ProfileHelpActivity
 import com.capstone.c22018.buangin.ui.profile.language.ProfileLanguageActivity
 import com.capstone.c22018.buangin.ui.profile.privacy.ProfilePrivacyActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class ProfileActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProfileBinding
+
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setActionBtn()
+        auth = FirebaseAuth.getInstance()
+        val user = auth.currentUser
 
+        setActionBtn()
     }
 
     private fun setActionBtn() {
-
         binding.rlAccount.setOnClickListener {
             startActivity(Intent(this, ProfileAccountActivity::class.java))
         }
@@ -42,10 +46,16 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         binding.btnLogout.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            btnLogout()
         }
-
     }
 
+    private fun btnLogout() {
+        auth = FirebaseAuth.getInstance()
+        auth.signOut()
+        val intent = Intent(this, LoginActivity::class.java)
+        finishAffinity()
+        startActivity(intent)
+    }
 
 }

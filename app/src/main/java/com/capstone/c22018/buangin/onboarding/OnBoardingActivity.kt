@@ -27,12 +27,6 @@ class OnBoardingActivity : AppCompatActivity() {
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        preferences = Preferences(this)
-        if (preferences.getValues("onboarding").equals("1")) {
-            val intent = Intent(this@OnBoardingActivity, LoginActivity::class.java)
-            startActivity(intent)
-        }
-
         setOnboardingItems()
         setupIndicators()
         setCurrentIndicator(0)
@@ -41,13 +35,14 @@ class OnBoardingActivity : AppCompatActivity() {
     }
 
     private fun setActionBtn() {
-
         binding.btnLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+            finishAffinity()
         }
 
         binding.btnRegister.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
+            finishAffinity()
         }
 
     }
